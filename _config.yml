@@ -3,12 +3,13 @@ email: info.tedxminoruparkyouth@gmail.com
 location: XYZ 12000 Road. Richmond, BC
 description: >-
   Description
-baseurl: "tedx/" 
+baseurl: "" 
 url: "https://www.tedxminorupark.com" 
-username:
-  github: tedxyouthminorupark
-  linkedin: tedxyouthminorupark
-  instagram: tedxyouthminorupark
+social_links:
+  discord: https://discord.gg/JV6YBbHwzJ
+  linkedin: https://www.linkedin.com/company/tedxminoru-park-youth/
+  instagram: https://www.instagram.com/tedxminoruparkyouth/
+  github: https://github.com/TEDxMinoruPark/
 
 collections:
   speakers:
