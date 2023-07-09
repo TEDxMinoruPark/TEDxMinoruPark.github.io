@@ -16,62 +16,82 @@
   </head>
   <body>
     <header class="header border-bottom sticky-top bg-light">
-  <nav class="navbar navbar-expand-sm px-3">
+  <nav class="navbar navbar-expand-lg px-3">
     <a class="navbar-brand" href="../index.html">
       <!-- <img src="../assets/img/logo.webp" alt="" /> -->
       <span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span>
     </a>
-    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
+    <button class="navbar-toggler d-lg-none navbar-toggler-icon" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+      aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/faq" id="faqDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQs</a>
-          <div class="dropdown-menu" aria-labelledby="faqDropdown">
-            <a class="dropdown-item" href="/faq#contact">Contact</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
+          <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">About Us</a>
           <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
             <a class="dropdown-item" href="/team">Our Team</a>
             <a class="dropdown-item" href="/history">History</a>
+            <a class="dropdown-item" href="/faq">FAQs</a>
+            <a class="dropdown-item" href="/faq#contact">Contact</a>
           </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/partners">Partners</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/speakers" id="speakersDropdown" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Speakers</a>
+          <div class="dropdown-menu" aria-labelledby="speakersDropdown">
+            <a class="dropdown-item" href="/speakers#apply">Become a speaker</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdown" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Events</a>
+          <div class="dropdown-menu" aria-labelledby="eventsDropdown">
+            <a class="dropdown-item" href="/events#past">Past Events</a>
+          </div>
+        </li>
+        <li class="nav-item ps-1">
+          <a name="" id="" class="btn btn-primary" href="#" role="button">Get Tickets</a>
         </li>
       </ul>
     </div>
   </nav>
-  </header>
-  
-
+</header>
     <main></main>
-    <footer class="footer w-75 pt-5 pb-3 container border-top">
-    <div class="row">
-        <div class="col-md-6">
-            <h3><span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span></h3>
-            <ul class="list-unstyled">
-                <li>Email: info.tedxminoruparkyouth@gmail.com</li>
-                <li>Location: XYZ 12000 Road. Richmond, BC</li>
-            </ul>
-            <div class="d-flex gap-2 fs-3">
-                <a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
-                <a href=""><i class="fab fa-discord" aria-hidden="true"></i></a>
-                <a href=""><i class="fab fa-github" aria-hidden="true"></i></a>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <p>Sign up to receive updates.</p>
-            <div class="input-group mb-3">
-                <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="subscribe-button">
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" id="subscribe-button">Subscribe</button>
+    <footer class="footer pt-5 pb-3 border-top">
+    <div class="container">
+        <div class="row row-cols-md-2 g-2">
+            <div class="col">
+                <h3><span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span></h3>
+                <ul class="list-unstyled">
+                    <li>Email: info.tedxminoruparkyouth@gmail.com</li>
+                    <li>Location: XYZ 12000 Road. Richmond, BC</li>
+                </ul>
+                <div class="d-flex gap-2 fs-3">
+                    <a href="https://www.instagram.com/tedxminoruparkyouth/"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/tedxminoru-park-youth/"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://discord.gg/JV6YBbHwzJ"><i class="fab fa-discord" aria-hidden="true"></i></a>
+                    <a href="https://github.com/TEDxMinoruPark/"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
             </div>
+            <div class="col">
+                <p>Sign up to receive updates.</p>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="subscribe-button">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary border-right btn-secondary" style="border-top-left-radius: 0;
+                      border-bottom-left-radius: 0;" type="button" id="subscribe-button">Subscribe</button>
+                    </div>
+                  </div>              
+            </div>
         </div>
-    </div>
-
-    <div class="col col-12 text-center pt-5 text-muted">
-        <p><span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span> and its events are operated under license from <span class="fw-bold">TED</span>.</p>
+    
+        <div class="col col-12 text-center pt-3 text-muted">
+            <p><span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span> and its events are operated under license from <span class="fw-bold">TED</span>.</p>
+        </div>
     </div>
 </footer>
 

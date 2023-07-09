@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Speakers | TEDxYouth Minoru Park</title>
+    <title>Partners | TEDxYouth Minoru Park</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -60,113 +60,28 @@
     </div>
   </nav>
 </header>
-    <main><ul>
-    {% for member in site.data.members %}
-      <li>
-        <a href="https://github.com/{{ member.github }}">
-          {{ member.name }}
-        </a>
-      </li>
-    {% endfor %}
-    </ul>
-<section class="">
-    <div class="container">
-        <h1>2023 Speakers</h1>
-        <ul id="speaker-list">
-            {% for speaker in site.data.speakers %}
-            <li>
-                <a href="#" data-toggle="modal" data-target="#speaker-modal-{{speaker.presentation_title}}">
-                    {{ speaker.name }}
-                </a>
-            </li>
+    <main><section class="">
+    <div class="container py-4">
+        <h1 class="text-center mb-4">Our Partners & Sponsors</h1>
+        {% for tier in site.data.sponsors %}
+        <h2>{{tier.tier_name}}</h2>
+        <div class="row row-cols-sm-2 row-cols-md-3 g-2">
+            {% for sponsor in tier.sponsors %}
+            <div class="col">
+                <a href="{{sponsor.link}}">{{sponsor.name}}</a>
+                <div class="card">
+                    <img src="{{sponsor.image_url}}" class="card-img-top" alt="{{sponsor.name}}" />
+                    <div class="card-body">
+                        <h5 class="card-title">{{sponsor.name}}</h5>
+                    </div>
+                </div>
+            </div>
             {% endfor %}
-        </ul>
+        </div>
+        {% endfor %}
+        <a name="" id="" class="btn btn-primary" href="#" role="button">Support Us</a>
     </div>
-</section>
-
-<!-- modal generator -->
-{% for speaker in site.data.speakers %}
-<div id="speaker-modal-{{speaker.presentation_title}}" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>{{speaker.presentation_title}}</h2>
-        <iframe width="560" height="315" src="{{speaker.video}}" frameborder="0" allowfullscreen></iframe>
-        <p>{{full_description}}</p>
-    </div>
-</div>
-{% endfor %}
-
-<style>
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 99;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0, 0, 0, 0.9);
-    }
-
-    .modal-content {
-        margin: 10% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 700px;
-        color: #fff;
-        text-align: center;
-    }
-
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #fff;
-        text-decoration: none;
-        cursor: pointer;
-    }
-</style>
-
-<script>
-    // open modal
-    var speakerLinks = document.querySelectorAll('[data-toggle="modal"]');
-    var modals = document.querySelectorAll(".modal");
-    var closeButton = document.querySelectorAll(".close");
-
-    for (var i = 0; i < speakerLinks.length; i++) {
-        speakerLinks[i].addEventListener("click", function (e) {
-            e.preventDefault();
-            var targetModal = document.querySelector(
-                this.getAttribute("data-target")
-            );
-            targetModal.style.display = "block";
-        });
-    }
-
-    // close modal
-    for (var j = 0; j < closeButton.length; j++) {
-        closeButton[j].addEventListener("click", function () {
-            var modal = this.parentElement.parentElement;
-            modal.style.display = "none";
-        });
-    }
-
-    window.addEventListener("click", function (event) {
-        for (var k = 0; k < modals.length; k++) {
-            if (event.target == modals[k]) {
-                modals[k].style.display = "none";
-            }
-        }
-    });
-</script></main>
+</section></main>
     <footer class="footer pt-5 pb-3 border-top">
     <div class="container">
         <div class="row row-cols-md-2 g-2">

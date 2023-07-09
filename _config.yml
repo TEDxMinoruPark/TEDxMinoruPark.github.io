@@ -11,10 +11,6 @@ social_links:
   instagram: https://www.instagram.com/tedxminoruparkyouth/
   github: https://github.com/TEDxMinoruPark/
 
-collections:
-  speakers:
-    layout: speaker
-
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/

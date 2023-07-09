@@ -1,0 +1,37 @@
+# in the future, add by years
+- tier_name: name
+  sponsors:
+    - name: School of Woke
+      link: 
+      img_url:
+    - name: Jingle Spa Society 
+      link: 
+      img_url:
+    - name: Single Guitar Shelf
+      link: 
+      img_url: 
+
+- tier_name: Silver
+  sponsors:
+    - name: Bank of Pickleverse
+      link: 
+      img_url:
+    - name: Diep.io
+      link: 
+      img_url:
+    - name: Hyper Hippo
+      link: 
+      img_url:
+
+ 
+- tier_name: Bronze
+  sponsors:
+    - name: John's Pizza
+      link: 
+      img_url:
+    - name: Papaya Legacy
+      link: 
+      img_url:
+    - name: Tin Can House
+      link: 
+      img_url: 
