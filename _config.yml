@@ -19,11 +19,11 @@ theme: null
 
 defaults:
 -
-    scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "wrapper"
+  scope:
+    path: ""
+    type: "pages"
+  values:
+    layout: "wrapper"
 
 # exclude:
 #   - .sass-cache/

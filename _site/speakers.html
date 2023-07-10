@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Speakers | TEDxYouth Minoru Park</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Speakers | TEDxYouth Minoru Park</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- custom styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body>
-    <header class="header border-bottom sticky-top bg-light">
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="/">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+  <header class="header border-bottom sticky-top bg-light">
   <nav class="navbar navbar-expand-lg px-3">
     <a class="navbar-brand" href="../index.html">
       <!-- <img src="../assets/img/logo.webp" alt="" /> -->
       <span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span>
     </a>
-    <button class="navbar-toggler d-lg-none navbar-toggler-icon" type="button" data-bs-toggle="collapse"
-      data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-      aria-label="Toggle navigation"></button>
+    <button class="navbar-toggler d-lg-none navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"></button>
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">About Us</a>
+          <a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Us</a>
           <div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
             <a class="dropdown-item" href="/team">Our Team</a>
             <a class="dropdown-item" href="/history">History</a>
@@ -40,15 +37,13 @@
           <a class="nav-link" href="/partners">Partners</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/speakers" id="speakersDropdown" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Speakers</a>
+          <a class="nav-link dropdown-toggle" href="/speakers" id="speakersDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Speakers</a>
           <div class="dropdown-menu" aria-labelledby="speakersDropdown">
             <a class="dropdown-item" href="/speakers#apply">Become a speaker</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdown" data-bs-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">Events</a>
+          <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
           <div class="dropdown-menu" aria-labelledby="eventsDropdown">
             <a class="dropdown-item" href="/events#past">Past Events</a>
           </div>
@@ -60,41 +55,182 @@
     </div>
   </nav>
 </header>
-    <main><ul>
-    {% for member in site.data.members %}
-      <li>
-        <a href="https://github.com/{{ member.github }}">
-          {{ member.name }}
-        </a>
-      </li>
-    {% endfor %}
-    </ul>
-<section class="">
-    <div class="container">
+  <main><section class="">
+    <div class="container py-4">
         <h1>2023 Speakers</h1>
         <ul id="speaker-list">
-            {% for speaker in site.data.speakers %}
+            
             <li>
-                <a href="#" data-toggle="modal" data-target="#speaker-modal-{{speaker.presentation_title}}">
-                    {{ speaker.name }}
+                <a href="#" data-toggle="modal" data-target="#speaker-modal-1">
+                    Yonny Yonzales The Simple Secret of Being Happier
                 </a>
             </li>
-            {% endfor %}
+            
+            <li>
+                <a href="#" data-toggle="modal" data-target="#speaker-modal-2">
+                    Danny Cobalt Six behaviors to increase your confidence
+                </a>
+            </li>
+            
+            <li>
+                <a href="#" data-toggle="modal" data-target="#speaker-modal-3">
+                    Bennedict Egg Some cool Title of the Presentation
+                </a>
+            </li>
+            
+            <li>
+                <a href="#" data-toggle="modal" data-target="#speaker-modal-4">
+                    Dr. Queen Elizabeth How to stay calm when you know you'll be stressed
+                </a>
+            </li>
+            
         </ul>
     </div>
 </section>
 
 <!-- modal generator -->
-{% for speaker in site.data.speakers %}
-<div id="speaker-modal-{{speaker.presentation_title}}" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>{{speaker.presentation_title}}</h2>
-        <iframe width="560" height="315" src="{{speaker.video}}" frameborder="0" allowfullscreen></iframe>
-        <p>{{full_description}}</p>
+
+<div id="speaker-modal-1" class="modal">
+    <div class="modal-content p-3 row g-1">
+        <div class="col">
+            <h2 class="text-center span">The Simple Secret of Being Happier</h2>
+        </div>
+
+        <!-- presentation info -->
+        <div class="col">
+            <div class="ratio ratio-16x9">
+                <iframe class="h-100 w-100" src="https://www.youtube.com/embed/gYeHV_nA36c" title="The Simple Secret of Being Happier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+        <!-- <i class="fa fa-close close link-primary fs-3"></i> -->
+
+        <div class="col text-center">
+            <p>We think happiness comes from meeting other people's expectations, but really it comes from creating our own. In this relatable and humorous talk, Certified Chief Happiness Officer, Tia Graham inspires us to make intentional choices about how we spend our time. After decades of working with leaders and organizations, Tia argues that putting happiness first is the path to fulfillment and career success. 
+</p>
+        </div>
+
+        <!-- speaker bio -->
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="card-text text-left">Typical food geek. Wannabe web maven. Friend of animals everywhere. Incurable coffee advocate. Infuriatingly humble internet evangelist.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="" class="card-img" alt="Yonny Yonzales" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>        
     </div>
 </div>
-{% endfor %}
+
+<div id="speaker-modal-2" class="modal">
+    <div class="modal-content p-3 row g-1">
+        <div class="col">
+            <h2 class="text-center span">Six behaviors to increase your confidence</h2>
+        </div>
+
+        <!-- presentation info -->
+        <div class="col">
+            <div class="ratio ratio-16x9">
+                <iframe class="h-100 w-100" src="https://www.youtube.com/embed/IitIl2C3Iy8" title="Six behaviors to increase your confidence" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+        <!-- <i class="fa fa-close close link-primary fs-3"></i> -->
+
+        <div class="col text-center">
+            <p>Research tells us that the way to get people to change is not to start with trying to change their attitudes alone, but to start with the behaviors associated with the attitudes. When people see themselves behaving differently, they can then think of themselves differently and the attitude change will follow. The six behaviors discussed that you could start today are derived from over 90 interviews with female executives in sports. 
+</p>
+        </div>
+
+        <!-- speaker bio -->
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="card-text text-left">Zombie fanatic. Professional explorer. Web lover. Prone to fits of apathy. Total reader.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="" class="card-img" alt="Danny Cobalt" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+<div id="speaker-modal-3" class="modal">
+    <div class="modal-content p-3 row g-1">
+        <div class="col">
+            <h2 class="text-center span">Some cool Title of the Presentation</h2>
+        </div>
+
+        <!-- presentation info -->
+        <div class="col">
+            <div class="ratio ratio-16x9">
+                <iframe class="h-100 w-100" src="https://www.youtube.com/embed/MdZAMSyn_As" title="Some cool Title of the Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+        <!-- <i class="fa fa-close close link-primary fs-3"></i> -->
+
+        <div class="col text-center">
+            <p>Humor is something that transcends most barriers. It is a common unification; a concept understood by all. Despite this, there exists a large portion of the population that does not think they can utilize humor. Andrew Tarvin will show you that everyone can use humor.  Andrew Tarvin is the world’s first Humor Engineer teaching people how to get better results while having more fun. He has worked with thousands of people at 200+ organizations, including P&amp;G, GE, and Microsoft. Combining his background as a project manager at Procter &amp; Gamble with his experience as an international comedian, Andrew’s program are engaging, entertaining, and most important, effective. He is a best-selling author, has been featured in The Wall Street Journal, Forbes, and TEDx, and has delivered programs in 50 states, 18 countries, and 3 continents. He loves the color orange and is obsessed with chocolate.
+</p>
+        </div>
+
+        <!-- speaker bio -->
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="card-text text-left">Extreme coffee specialist. Alcohol trailblazer. Unapologetic gamer. Award-winning student.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="" class="card-img" alt="Bennedict Egg" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+<div id="speaker-modal-4" class="modal">
+    <div class="modal-content p-3 row g-1">
+        <div class="col">
+            <h2 class="text-center span">How to stay calm when you know you'll be stressed</h2>
+        </div>
+
+        <!-- presentation info -->
+        <div class="col">
+            <div class="ratio ratio-16x9">
+                <iframe class="h-100 w-100" src="https://www.youtube.com/embed/8jPQjjsBbIc" title="How to stay calm when you know you'll be stressed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+        <!-- <i class="fa fa-close close link-primary fs-3"></i> -->
+
+        <div class="col text-center">
+            <p>You're not at your best when you're stressed. In fact, your brain has evolved over millennia to release cortisol in stressful situations, inhibiting rational, logical thinking but potentially helping you survive, say, being attacked by a lion. Neuroscientist Daniel Levitin thinks there's a way to avoid making critical mistakes in stressful situations, when your thinking becomes clouded — the pre-mortem. "We all are going to fail now and then," he says. "The idea is to think ahead to what those failures might be."
+The TED Talks channel features the best talks and performances from the TED Conference, where the world's leading thinkers and doers give the talk of their lives in 18 minutes (or less). Look for talks on Technology, Entertainment and Design -- plus science, business, global issues, the arts and more. You're welcome to link to or embed these videos, forward them to others and share these ideas with people you know. </p>
+        </div>
+
+        <!-- speaker bio -->
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-8">
+                        <p class="card-text text-left">Coffee trailblazer. Certified pop culture lover. Infuriatingly humble gamer.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="" class="card-img" alt="Dr. Queen Elizabeth" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+</div>
+
+
 
 <style>
     .modal {
@@ -111,26 +247,16 @@
 
     .modal-content {
         margin: 10% auto;
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%;
-        max-width: 700px;
-        color: #fff;
-        text-align: center;
+        max-width: 800px;
     }
 
     .close {
-        color: #aaa;
         float: right;
-        font-size: 28px;
-        font-weight: bold;
         cursor: pointer;
     }
 
     .close:hover,
     .close:focus {
-        color: #fff;
-        text-decoration: none;
         cursor: pointer;
     }
 </style>
@@ -167,11 +293,13 @@
         }
     });
 </script></main>
-    <footer class="footer pt-5 pb-3 border-top">
+  <footer class="footer pt-5 pb-3 border-top">
     <div class="container">
         <div class="row row-cols-md-2 g-2">
             <div class="col">
-                <h3><span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span></h3>
+                <h3>
+<span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span>
+</h3>
                 <ul class="list-unstyled">
                     <li>Email: info.tedxminoruparkyouth@gmail.com</li>
                     <li>Location: XYZ 12000 Road. Richmond, BC</li>
@@ -201,24 +329,14 @@
     </div>
 </footer>
 
-    <a id="backToTop" href="#">
-      <i class="fas fa-chevron-up" aria-hidden="true"></i>
-    </a>
+  <!-- custom scripts -->
+  <script src=""></script>
 
-    <!-- custom scripts -->
-    <script src=""></script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-    <!-- bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-      crossorigin="anonymous"
-    ></script>
+  <!-- fa -->
+  <script src="https://kit.fontawesome.com/51e1f7ac6b.js" crossorigin="anonymous"></script>
+</body>
 
-    <!-- fa -->
-    <script
-      src="https://kit.fontawesome.com/51e1f7ac6b.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
