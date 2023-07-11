@@ -20,7 +20,7 @@ The TEDx Event Website offers the following features:
 - **Contact**: A contact form to get in touch with the event organizers.
 - **Responsive Design**: The website is optimized for different devices and screen sizes.
 
-## Getting Starte
+## Getting Started
 The main files and directories in this repository are:
 
 index.html: The homepage of the website.
