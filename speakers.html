@@ -5,15 +5,20 @@ test: test
 <section class="">
     <div class="container py-4">
         <h1>2023 Speakers</h1>
-        <ul id="speaker-list">
+        <div class="row row-cols-md-3 g-2">
             {% for talk in site.data.talks %}
-            <li>
                 <a href="#" data-toggle="modal" data-target="#speaker-modal-{{ forloop.index }}">
-                    {{ talk.speaker.name }} {{ talk.presentation.title }}
+                    <div class="card h-100">
+                        <div class="ratio ratio-16x9">
+                            <img src="https://img.youtube.com/vi/{{talk.presentation.video}}/0.jpg" class="card-img-top h-100 w-100 object-fit-cover" alt="video thumbnail">
+                        </div>
+                        <div class="card-body">
+                        <h5 class="card-title">{{talk.presentation.title}}</h5>
+                        </div>
+                    </div>
                 </a>
-            </li>
             {% endfor %}
-        </ul>
+        </div>
     </div>
 </section>
 
@@ -42,13 +47,19 @@ test: test
 
         <!-- speaker bio -->
         <div class="card">
-            <div class="card-body">
+            <div class="card-body d-flex">
                 <div class="row">
-                    <div class="col-8">
-                        <p class="card-text text-left">{{ talk.speaker.bio }}</p>
+                    <div class="col-9">
+                        <p class="card-text text-left h3">{{ talk.speaker.name }}</p>
+                        <p class="card-text text-left m-0">{{ talk.speaker.bio }}</p>
+                        <div class="d-flex gap-1 fs-3 m-0">
+                            <a href=""><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
                     </div>
-                    <div class="col-4">
-                        <img src="{{talk.speaker.image}}" class="card-img" alt="{{talk.speaker.name}}"/>
+                    <div class="col-3">
+                        <div class="ratio ratio-1x1">
+                            <img src="{{ talk.speaker.image }}" class="card-img w-100 h-100" alt="{{talk.speaker.name}}"/>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 - 
   speaker: 
     name: Yonny Yonzales
-    image:
+    image: https://ph-files.imgix.net/81c8176a-1b00-4f10-b60f-2ab2729d0a14.png
     bio: Typical food geek. Wannabe web maven. Friend of animals everywhere. Incurable coffee advocate. Infuriatingly humble internet evangelist.
   presentation:
     title: The Simple Secret of Being Happier
@@ -10,9 +10,42 @@
       We think happiness comes from meeting other people's expectations, but really it comes from creating our own. In this relatable and humorous talk, Certified Chief Happiness Officer, Tia Graham inspires us to make intentional choices about how we spend our time. After decades of working with leaders and organizations, Tia argues that putting happiness first is the path to fulfillment and career success. 
 
 - 
+  speaker: 
+    name: Yonny Yonzales
+    image: https://ph-files.imgix.net/81c8176a-1b00-4f10-b60f-2ab2729d0a14.png
+    bio: Typical food geek. Wannabe web maven. Friend of animals everywhere. Incurable coffee advocate. Infuriatingly humble internet evangelist.
+  presentation:
+    title: 101 Reasons Why I can't Think of a New Title
+    video: kKvK2foOTJM
+    description: >
+      We think happiness comes from meeting other people's expectations, but really it comes from creating our own. In this relatable and humorous talk, Certified Chief Happiness Officer, Tia Graham inspires us to make intentional choices about how we spend our time. After decades of working with leaders and organizations, Tia argues that putting happiness first is the path to fulfillment and career success. 
+
+- 
+  speaker: 
+    name: Yonny Yonzales
+    image: https://ph-files.imgix.net/81c8176a-1b00-4f10-b60f-2ab2729d0a14.png
+    bio: Typical food geek. Wannabe web maven. Friend of animals everywhere. Incurable coffee advocate. Infuriatingly humble internet evangelist.
+  presentation:
+    title: How the education system fails you
+    video: 6z7LZVTnj08
+    description: >
+      We think happiness comes from meeting other people's expectations, but really it comes from creating our own. In this relatable and humorous talk, Certified Chief Happiness Officer, Tia Graham inspires us to make intentional choices about how we spend our time. After decades of working with leaders and organizations, Tia argues that putting happiness first is the path to fulfillment and career success. 
+
+- 
+  speaker: 
+    name: Yonny Yonzales
+    image: https://ph-files.imgix.net/81c8176a-1b00-4f10-b60f-2ab2729d0a14.png
+    bio: Typical food geek. Wannabe web maven. Friend of animals everywhere. Incurable coffee advocate. Infuriatingly humble internet evangelist.
+  presentation:
+    title: Why your dad is never coming home
+    video: iMBJrvEwv8s
+    description: >
+      We think happiness comes from meeting other people's expectations, but really it comes from creating our own. In this relatable and humorous talk, Certified Chief Happiness Officer, Tia Graham inspires us to make intentional choices about how we spend our time. After decades of working with leaders and organizations, Tia argues that putting happiness first is the path to fulfillment and career success. 
+
+- 
   speaker:
     name: Danny Cobalt
-    image:
+    image: https://ph-files.imgix.net/81c8176a-1b00-4f10-b60f-2ab2729d0a14.png
     bio: Zombie fanatic. Professional explorer. Web lover. Prone to fits of apathy. Total reader.
   presentation:
     title: Six behaviors to increase your confidence
@@ -23,7 +56,7 @@
 - 
   speaker: 
     name: Bennedict Egg
-    image: 
+    image: https://ph-files.imgix.net/81c8176a-1b00-4f10-b60f-2ab2729d0a14.png
     bio: Extreme coffee specialist. Alcohol trailblazer. Unapologetic gamer. Award-winning student.
   presentation:
     title: Some cool Title of the Presentation
@@ -35,7 +68,7 @@
 - 
   speaker: 
     name: Dr. Queen Elizabeth
-    image:
+    image: https://ph-files.imgix.net/81c8176a-1b00-4f10-b60f-2ab2729d0a14.png
     bio: Coffee trailblazer. Certified pop culture lover. Infuriatingly humble gamer.
   presentation:
     title: How to stay calm when you know you'll be stressed
