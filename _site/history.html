@@ -106,18 +106,22 @@
             </div>
             <div class="col">
                 <p>Sign up to receive updates.</p>
-                <div class="input-group mb-3">
-                    <input type="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="subscribe-button">
-                    <div class="input-group-append">
-                      <button class="btn btn-primary border-right btn-secondary" style="border-top-left-radius: 0;
-                      border-bottom-left-radius: 0;" type="button" id="subscribe-button">Subscribe</button>
+                <form action="https://formspree.io/f/xoqoqpkv" method="POST">
+                    <div class="input-group mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="subscribe-button">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary border-right btn-secondary" style="border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;" type="submit" id="subscribe-button">Subscribe</button>
+                        </div>
                     </div>
-                  </div>              
+                </form>
             </div>
         </div>
-    
+
         <div class="col col-12 text-center pt-3 text-muted">
-            <p><span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span> and its events are operated under license from <span class="fw-bold">TED</span>.</p>
+            <p><span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span> and its
+                events
+                are operated under license from <span class="fw-bold">TED</span>.</p>
         </div>
     </div>
 </footer>
