@@ -110,21 +110,32 @@ title: Our Team
 </style>
 
 <script>
-  var modal = document.querySelectorAll(".modal");
+  var modals = document.querySelectorAll(".modal");
   var btn = document.querySelectorAll('[data-toggle="modal"]');
   var close = document.querySelectorAll(".close");
-  
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  
-  close.onclick = function() {
-    modal.style.display = "none";
-  }
-  
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+
+  for (var i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function (e) {
+            e.preventDefault();
+            var targetModal = document.querySelector(
+                this.getAttribute("data-target")
+            );
+            targetModal.style.display = "block";
+        });
     }
-  }
+
+  for (var j = 0; j < close.length; j++) {
+        close[j].addEventListener("click", function () {
+            var modal = this.parentElement.parentElement;
+            modal.style.display = "none";
+        });
+    }
+  
+  window.addEventListener("click", function (event) {
+        for (var k = 0; k < modals.length; k++) {
+            if (event.target == modals[k]) {
+                modals[k].style.display = "none";
+            }
+        }
+    });
 </script>
