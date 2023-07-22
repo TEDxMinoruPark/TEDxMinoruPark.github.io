@@ -1,3 +1,130 @@
 ---
 title: Our Team
 ---
+
+<section>
+    <div class="container py-5">
+        <center><h1>Our Team</h1></center>
+        <div class="row">
+          <div class="col-sm-2">
+            {% for i in site.data.team_members %}
+            <div class="card border-black mb-3">
+                <img class="card-img-top" src="{{i.name}}.png">
+                <div class="card-body">
+                    <h3 class="card-title">{{i.name}}</h3>
+                    <p class="card-text">{{i.position}}</p>
+                    <a href="#" data-toggle="modal" data-target="#team-modal-{{forloop.index}} class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+    </div>
+</section>
+
+{% for i in site.data.team_members %}
+<div id="team-modal-{{forloop.index}}" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <center><h2>{{i.name}}</h2></center>
+      </div>
+      <center>
+        <h4>{{i.position}}</h4>
+        <center><img src="/assets/images/tedx.jpg" class="img-fluid"></center>
+        <p>{{i.full_description}}</p>
+      </center>
+    </div>
+</div>
+{% endfor %}
+
+<style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+      -webkit-animation-name: fadeIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s
+    }
+  
+    .modal-content {
+      position: fixed;
+      bottom: 0;
+      background-color: #000000;
+      color: white;
+      width: 100%;
+      -webkit-animation-name: slideIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: slideIn;
+      animation-duration: 0.4s
+    }
+
+    .modal-header {
+      padding: 2px 16px;
+      background-color: #000000;
+      color: white;
+    }
+
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    @-webkit-keyframes slideIn {
+      from {bottom: -300px; opacity: 0} 
+      to {bottom: 0; opacity: 1}
+    }
+    
+    @keyframes slideIn {
+      from {bottom: -300px; opacity: 0}
+      to {bottom: 0; opacity: 1}
+    }
+    
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fadeIn {
+      from {opacity: 0} 
+      to {opacity: 1}
+    }  
+</style>
+
+<script>
+  var modal = document.querySelectorAll(".modal");
+  var btn = document.querySelectorAll('[data-toggle="modal"]');
+  var close = document.querySelectorAll(".close");
+  
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  close.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
