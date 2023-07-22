@@ -25,11 +25,9 @@ title: Our Team
 {% for i in site.data.team_members %}
 <div id="team-modal-{{forloop.index}}" class="modal">
     <div class="modal-content">
-      <div class="modal-header">
-        <span class="close">&times;</span>
-        <center><h2>{{i.name}}</h2></center>
-      </div>
+      <span class="close">&times;</span>
       <center>
+        <h2>{{i.name}}</h2>
         <h4>{{i.position}}</h4>
         <center><img src="/assets/images/tedx.jpg" class="img-fluid"></center>
         <p>{{i.full_description}}</p>
@@ -50,10 +48,10 @@ title: Our Team
       overflow: auto;
       background-color: rgb(0,0,0);
       background-color: rgba(0,0,0,0.4);
-      /*-webkit-animation-name: fadeIn;
+      -webkit-animation-name: fadeIn;
       -webkit-animation-duration: 0.4s;
       animation-name: fadeIn;
-      animation-duration: 0.4s*/
+      animation-duration: 0.4s
     }
   
     .modal-content {
@@ -62,16 +60,10 @@ title: Our Team
       background-color: #000000;
       color: white;
       width: 100%;
-      /*-webkit-animation-name: slideIn;
+      -webkit-animation-name: slideIn;
       -webkit-animation-duration: 0.4s;
       animation-name: slideIn;
-      animation-duration: 0.4s*/
-    }
-
-    .modal-header {
-      padding: 2px 16px;
-      background-color: #000000;
-      color: white;
+      animation-duration: 0.4s
     }
 
     .close {
@@ -88,7 +80,7 @@ title: Our Team
       cursor: pointer;
     }
 
-    /*@-webkit-keyframes slideIn {
+    @-webkit-keyframes slideIn {
       from {bottom: -300px; opacity: 0} 
       to {bottom: 0; opacity: 1}
     }
@@ -106,7 +98,7 @@ title: Our Team
     @keyframes fadeIn {
       from {opacity: 0} 
       to {opacity: 1}
-    }  */
+    } 
 </style>
 
 <script>
