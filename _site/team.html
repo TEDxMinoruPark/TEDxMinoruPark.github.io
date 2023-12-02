@@ -17,7 +17,7 @@
 <body>
   <header class="header border-bottom sticky-top bg-light">
   <nav class="navbar navbar-expand-lg px-3">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="">
       <!-- <img src="../assets/img/logo.webp" alt="" /> -->
       <span class="text-primary fw-bold">TEDx</span>Minoru Park <span class="fw-bold">Youth</span>
     </a>
@@ -37,25 +37,158 @@
           <a class="nav-link" href="/partners">Partners</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/speakers" id="speakersDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Speakers</a>
+          <a class="nav-link dropdown-toggle" href="" id="speakersDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Speakers</a>
           <div class="dropdown-menu" aria-labelledby="speakersDropdown">
-            <a class="dropdown-item" href="/speakers#apply">Become a speaker</a>
+            <a class="dropdown-item" href="/speakers">2023 Speakers</a>
+            <a class="dropdown-item" href="https://form.jotform.com/231959324411051">Become a speaker!</a>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Events</a>
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/events" id="eventsDropdown" data-bs-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Events</a>
           <div class="dropdown-menu" aria-labelledby="eventsDropdown">
             <a class="dropdown-item" href="/events#past">Past Events</a>
           </div>
-        </li>
+        </li> -->
         <li class="nav-item ps-1">
-          <a name="" id="" class="btn btn-primary" href="#" role="button">Get Tickets</a>
+          <a name="" id="" class="btn btn-primary" href="https://www.eventbrite.ca/a83jfiep/" role="button">Get Tickets</a>
         </li>
       </ul>
     </div>
   </nav>
 </header>
-  <main></main>
+  <main><section>
+    <div class="container py-5">
+        <center><h1>Our Team</h1></center>
+        <div class="row">
+          <div class="col-sm-2">
+            
+            <div class="card border-black mb-3">
+                <img class="card-img-top" src="John%20Doe.png" loading="lazy">
+                <div class="card-body">
+                    <h3 class="card-title">John Doe</h3>
+                    <p class="card-text">Lorem.</p>
+                    <a data-toggle="modal" data-target="#team-modal-1" class="btn btn-primary" role="button">Learn More</a>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+</section>
+
+
+<div id="team-modal-1" class="modal">
+    <div class="modal-content">
+      <span class="close">×</span>
+      <center>
+        <h2>John Doe</h2>
+        <h4>Lorem.</h4>
+        <center><img src="/assets/images/tedx.jpg" class="img-fluid" loading="lazy"></center>
+        <p>Lorem.
+</p>
+      </center>
+    </div>
+</div>
+
+
+<style>
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+      -webkit-animation-name: fadeIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: fadeIn;
+      animation-duration: 0.4s
+    }
+  
+    .modal-content {
+      position: fixed;
+      bottom: 0;
+      background-color: #000000;
+      color: white;
+      width: 100%;
+      -webkit-animation-name: slideIn;
+      -webkit-animation-duration: 0.4s;
+      animation-name: slideIn;
+      animation-duration: 0.4s
+    }
+
+    .close {
+      color: white;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    @-webkit-keyframes slideIn {
+      from {bottom: -300px; opacity: 0} 
+      to {bottom: 0; opacity: 1}
+    }
+    
+    @keyframes slideIn {
+      from {bottom: -300px; opacity: 0}
+      to {bottom: 0; opacity: 1}
+    }
+    
+    @-webkit-keyframes fadeIn {
+      from {opacity: 0} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fadeIn {
+      from {opacity: 0} 
+      to {opacity: 1}
+    } 
+</style>
+
+<script>
+  var modals = document.querySelectorAll(".modal");
+  var btn = document.querySelectorAll('[data-toggle="modal"]');
+  var close = document.querySelectorAll(".close");
+
+  for (var i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function (e) {
+            e.preventDefault();
+            var targetModal = document.querySelector(
+                this.getAttribute("data-target")
+            );
+            targetModal.style.display = "block";
+        });
+    }
+
+  for (var j = 0; j < close.length; j++) {
+        close[j].addEventListener("click", function () {
+            for (var m = 0; m < modals.length; k++) {
+                modals[m].style.display = "none";
+            }
+        });
+    }
+  
+  window.addEventListener("click", function (event) {
+        for (var k = 0; k < modals.length; k++) {
+            if (event.target == modals[k]) {
+                modals[k].style.display = "none";
+            }
+        }
+    });
+</script>
+</main>
   <footer class="footer pt-5 pb-3 border-top">
     <div class="container">
         <div class="row row-cols-md-2 g-2">

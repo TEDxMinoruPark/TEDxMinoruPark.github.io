@@ -63,6 +63,10 @@ html {
   object-fit: cover;
 }
 
+.object-fit {
+  object-fit: cover;
+}
+
 .hero-section {
   position: relative;
   height: 100vh;
